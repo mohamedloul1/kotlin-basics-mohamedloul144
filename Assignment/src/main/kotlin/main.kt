@@ -4,18 +4,19 @@ fun main(args: Array<String>) {
 
     Challenge hint: Use two variables and the print line function to show this in the console.
  */
-    println("------Challenge 1-------------------------------")
-
+//    println("------Challenge 1-------------------------------")
+    val MaandSalaris: Int = 3404
+    val WeekSalaris: Int = MaandSalaris/ 4
+    println("Mijn maandsalaris is: $WeekSalaris")
 
 /*
     Challenge 2: Try to figure out why the code under this comment is will not work
 */
-    println("------Challenge 2-------------------------------")
-    val name: String = "Enter your name here"
-    println(name)
+    var name: String = "Mohamed"
+    println("Eerste naam is: $name")
 
-    name = "Eric Cartman"
-    println(name)
+    name = "Karim"
+    println("Tweede naam is: $name")
 
 /*
     Challenge 3: Create the following:
@@ -25,8 +26,11 @@ fun main(args: Array<String>) {
     - Refactor the 'z' variable to 'car' and 'k' to horsepower.
     - Print the values to the console.
 */
-    println("------Challenge 3-------------------------------")
-
+    var car: Int = 8
+    var horsepower: Int = 5
+    var multiply = (car*horsepower)
+    var divide = (multiply/3.5)
+    println("Hier wordt het result aangegven van het variable: " +divide)
 
 /*
     Challenge 4: Use string interpolation
@@ -46,8 +50,15 @@ fun main(args: Array<String>) {
     you'll find many examples. Also start making variables to store the information.
  */
 
-    println("------Challenge 4-------------------------------")
 
+    val eggs: Int= 2
+    val teaspoon_sumak: Int = 1
+    val teaspoon_salt: Double = 1.5
+    val teaspoon_black: Int = 3
+    println("Number of eggs: $eggs" +
+            " Number of teaspoon_sumak: $teaspoon_sumak" +
+            " Number of teaspoon_salt: $teaspoon_salt" +
+            " Number of teaspoon_black: $teaspoon_black")
 
     /*
 
@@ -58,7 +69,15 @@ fun main(args: Array<String>) {
     so that Kotlin uses this functionality.
      */
 
-    println("------Challenge 5-------------------------------")
+    eggs
+    teaspoon_sumak
+    teaspoon_salt
+    teaspoon_black
+
+    println("Number of eggs: $eggs" +
+            " Number of teaspoon_sumak: $teaspoon_sumak" +
+            " Number of teaspoon_salt: $teaspoon_salt" +
+            " Number of teaspoon_black: $teaspoon_black")
 
     /*
     Challenge 6:
@@ -78,6 +97,23 @@ fun main(args: Array<String>) {
     */
     println("------Challenge 6-------------------------------")
 
+    println("how speed do you using now?")
+    val speed = readLine()!!.toInt()
+    print("youre speed is: $speed")
+
+
+    val faster = (speed < 50)
+    val slow = (speed > 50)
+
+
+    if (speed == 50) {
+        println(
+            " Great job!")
+    }else if (faster) {
+        println(" You should a little faster")
+    } else if (slow) {
+        println(" You should slow down")
+    }
     /*
     Bonus round:
 
